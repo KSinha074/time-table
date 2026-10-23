@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mathematics Department Time Table</title>
+  <style>
+    body {
+      margin: 50px auto;
+      width: 1022px;
+      font-family: "Times New Roman", serif;
+      color: black;
+    }
+
+    h3, p {
+      margin: 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin: 4px 30px 7px;
+      font-weight: bold;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    .timetable {
+      width: 100%;
+      table-layout: fixed;
+      text-align: center;
+      font-size: 11px;
+      line-height: 13px;
+    }
+
+    .timetable td, .timetable th, .teachers td, .teachers th {
+      border: 1px solid gray;
+      padding: 3px;
+    }
+
+    .timetable th {
+      height: 42px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .timetable .day {
+      font-size: 12px;
+    }
+
+    .timetable .monday { height: 49px; }
+    .timetable .tuesday { height: 48px; }
+    .timetable .wednesday { height: 87px; }
+    .timetable .thursday { height: 48px; }
+    .timetable .friday { height: 81px; }
+    .timetable .saturday { height: 18px; }
+    .timetable .saturday th { height: 12px; }
+
+    .friday td {
+      padding: 1px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    hr {
+      margin: 2px 0;
+    }
+
+    .green {
+      background-color: #a6cf8e;
+    }
+
+    .blue {
+      background-color: #9cc1e2;
+    }
+
+    .lunch {
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+    .green-arrow {
+      color: #5c8b45;
+      font-weight: bold;
+    }
+
+    .blue-arrow {
+      color: #3975bd;
+      font-weight: bold;
+    }
+
+    .teachers {
+      width: 83.6%;
+      margin: 21px 0 0 2.75%;
+      table-layout: fixed;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .teachers th, .teachers td {
+      padding: 1px 5px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .signature {
+      margin: 16px 27px 0 0;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    @media (max-width: 1040px) {
+      body {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3>SRI VENKATESWARA COLLEGE (University of Delhi)</h3>
+  <p><b>Benito Juarez Road, Dhaula Kuan, New Delhi- 110021</b></p>
+  <p><b>TIME TABLE – 2026-27 (Odd Semester)</b></p>
+
+  <div class="details">
+    <span>Department: Mathematics</span>
+    <span>Semester: V A (Hons)</span>
+  </div>
+
+  <table class="timetable">
+    <colgroup>
+      <col style="width:7.6%">
+      <col style="width:11.5%">
+      <col style="width:9.6%">
+      <col style="width:11.5%">
+      <col style="width:11.5%">
+      <col style="width:5.8%">
+      <col style="width:11.5%">
+      <col style="width:10.6%">
+      <col style="width:11.5%">
+      <col style="width:8.6%">
+    </colgroup>
+    <tr>
+      <th></th>
+      <th>1<br>8.45-9.45<br>am</th>
+      <th>2<br>9.45-10.45<br>am</th>
+      <th>3<br>10.45-11.45<br>am</th>
+      <th>4<br>11.45-12.45<br>am/pm</th>
+      <th></th>
+      <th>5<br>01.05-2.05<br>pm</th>
+      <th>6<br>2.05-3.05<br>pm</th>
+      <th>7<br>3.05-4.05<br>pm</th>
+      <th>8<br>4.05-5.05<br>pm</th>
+    </tr>
+    <tr class="monday">
+      <th class="day">MONDAY</th>
+      <td class="green">GE V Th<br>A3/A4/B4<br>SS/NNK/VJ</td>
+      <td>DSC 14<br>209<br>RT</td>
+      <td>DSE 3<br>A4/B4/ICT lab III<br>RKB/PD/RQ</td>
+      <td>DSE 3<br>A4/B4/ICT lab III<br>RKB/PD/RQ</td>
+      <td class="lunch" rowspan="5">12.45 –<br>1.05 pm<br><br>LUNCH<br>BREAK</td>
+      <td>DSC 13<br>209<br>Guest 2</td>
+      <td>DSC 13 Tut<br>Lab III<br>Guest 2</td>
+      <td>DSC 15<br>102<br>PD</td>
+      <td></td>
+    </tr>
+    <tr class="tuesday">
+      <th class="day">TUESDAY</th>
+      <td>DSE 3<br>102/209/A4<br>RKB/PD/RQ</td>
+      <td>DSC 15<br>209<br>PD</td>
+      <td>DSC 14 Tut<br>A4<br>RT</td>
+      <td>*ECA</td>
+      <td colspan="2">DSC 15 ICT Lab III<br>(Batch A + B)<br><span class="green-arrow">◀──────▶</span> PD/PR</td>
+      <td>DSC 13 tut<br>209<br>Guest 2</td>
+      <td></td>
+    </tr>
+    <tr class="wednesday">
+      <th class="day">WEDNESDAY</th>
+      <td>DSC 13<br>209<br>Guest 2</td>
+      <td>DSC 14<br>A4<br>RT</td>
+      <td>DSC 14 Tut<br>A4<br>RT</td>
+      <td></td>
+      <td colspan="2" class="green">
+        GE V Practical&nbsp; ICT LAB III<br>
+        <span class="blue-arrow">◀────────────────▶</span><br>
+        SS<br><hr>
+        GE V Th&nbsp; 209/A4<br>VJ/NNK
+      </td>
+      <td class="green">GE V Th 102 SS<br>GE V Tut A4<br>NNK</td>
+      <td class="green">*ECA</td>
+    </tr>
+    <tr class="thursday">
+      <th class="day">THURSDAY</th>
+      <td class="green">GE V Th<br>A3/A4/B4<br>SS/NNK/VJ</td>
+      <td>DSC 14<br>209<br>RT</td>
+      <td>DSC 13<br>102<br>Guest 2</td>
+      <td>DSE 3 Tut<br>ICT Lab III<br>RKB</td>
+      <td colspan="2">DSC 15 ICT Lab III<br>(Batch A)<br><span class="green-arrow">◀──────▶</span> PR/SY</td>
+      <td>DSC 13 Tut<br>209<br>Guest 2</td>
+      <td>*ECA</td>
+    </tr>
+    <tr class="friday">
+      <th class="day">FRIDAY</th>
+      <td>DSE 3 (iv) TMH ICT Lab III<br><span class="green-arrow">◀────▶</span><br>RO/SS<hr>DSE 3 Tut A4<br>RKB</td>
+      <td>DSE 3 Tut<br>A4/B4<br>RKB/PD</td>
+      <td>DSC 15<br>A4<br>PD</td>
+      <td>DSC 14 Tut<br>A4<br>RT</td>
+      <td colspan="4" class="blue">SEC Semester V ICT LAB III<br><span class="green-arrow">◀────────────────────────▶</span><br>VJ/SY</td>
+    </tr>
+    <tr class="saturday">
+      <th class="day">SATURDAY</th>
+      <td></td><td></td><td></td><td></td>
+      <td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+
+  <table class="teachers">
+    <tr>
+      <th style="width:26%">Papers</th>
+      <th style="width:20%">Name of the Teacher</th>
+      <th style="width:32%">Papers</th>
+      <th style="width:22%">Name of the Teacher</th>
+    </tr>
+    <tr>
+      <td>DSC 13: Metric Spaces</td>
+      <td>Guest 2</td>
+      <td>DSE 3(iv): Research Methodology</td>
+      <td>Dr. Mohd. Rafiq</td>
+    </tr>
+    <tr>
+      <td>DSC 14: Ring Theory</td>
+      <td>Dr. Rahul Thakur</td>
+      <td>GE V(i): Numerical Analysis</td>
+      <td>Prof. Swarn Singh</td>
+    </tr>
+    <tr>
+      <td>DSC 15: Partial Differential Equation</td>
+      <td>Dr. P. Devaki</td>
+      <td>GE V(ii): Mathematical Python</td>
+      <td>Mr. Vikas Jorwal</td>
+    </tr>
+    <tr>
+      <td>DSE 3(ii): Linear Programming and Applications</td>
+      <td>Prof. Ramesh Kumar Budhraja</td>
+      <td>GE V(iii): Elementary Mathematical Analysis</td>
+      <td>Dr. N.N. Kujur</td>
+    </tr>
+    <tr>
+      <td>DSE 3(iii): Mathematical Statistics</td>
+      <td>Dr. P. Devaki</td>
+      <td>SEC V: Financial Modelling with Excel</td>
+      <td>Mr. Vikas Jorwal</td>
+    </tr>
+  </table>
+
+  <p class="signature">Teacher-in-Charge Signature</p>
+</body>
+</html>
